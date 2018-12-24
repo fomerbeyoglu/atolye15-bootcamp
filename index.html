@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Atolye15 Bootcamp Project</title>
+	<meta name="HandheldFriendly" content="True" />
+	<link rel="stylesheet" href="assets/main.css" />
+  </head>
+<body>
+<div class="headbg">
+  <header>
+	<div id="ustmenu">
+		<div class="wrap">
+			<div class="menulogo">
+				<img src="assets/icons/logo.svg" alt="Atolye15 Bootcamp" title="Atolye15 Bootcamp" />
+			</div>
+			<nav class="menu">
+				<ul>
+				<li><a href="#">Ana Sayfa</a></li>
+				<li><a href="#">Kampanyalar</a></li>
+				<li><a href="#">Bilet İşlemleri</a></li>
+				<li><a href="#">Yardım</a></li>
+				<li><a href="#"><img src="assets/icons/search.png" width="16px" height="16px" alt="Arama" title="Arama" /></a></li>
+				</ul>
+			</nav>
+			<br style="clear:both" />
+		</div>
+	</div>
+  </header>
+	<section id="headalt">
+		<div class="wrap">
+			<nav class="pagenav">
+			<ul>
+			<li><img src="assets/icons/pagenav1.svg" alt="" title="" /><p>Uçuş Seçimi</p></li>..
+			<li><img src="assets/icons/pagenav2.svg" alt="" title="" /></li>..
+			<li><img src="assets/icons/pagenav3.svg" alt="" title="" /></li>..
+			<li><img src="assets/icons/pagenav4.svg" alt="" title="" /></li>
+			</ul>
+			</nav><br style="clear:both;" />
+			<div class="ucusbilgi">
+			Ankara (ESB) <img src="assets/icons/flywithme.svg" alt="" title="" /> İzmir (ADB)<br style="clear:both;" />
+			<p>27 Eyl, Pzt - 08 Eki, Pts &nbsp;|&nbsp; 1 Yetişkin &nbsp;|&nbsp; Gidiş - Dönüş</p>
+			</div>
+			<div class="ucusdetay">
+			<p class="ucusfiyat">Toplam Tutar</p>
+			269.99TL <br style="clear:both;" />
+			<button class="ucusadevam">Devam Et</button>
+			</div>
+			<br style="clear:both" />
+			</div>
+	</section>
+</div>
+<section id="ucusara">
+  <div class="wrap">
+	<form>
+	<input list="city" id="nereden" placeholder="Nereden?">
+	<input list="city" id="nereye" placeholder="Nereye!">
+	<datalist id="city">
+	<option value="İzmir">
+	<option value="İstanbul-Atatürk">
+	<option value="İstanbul-Sahiba Gökçen">
+	<option value="Ankara">
+	<option value="Ordu-Giresun">
+	</datalist>
+	<input type="date" id="tarih" style="color:#767676">
+	<input type="text" id="yolcu" placeholder="Yolcu Seç">
+	<!-- aslında input type text olmaması lazım, ama detay için zaman yok :( -->
+	<input type="submit" id="ara" class="arabuton" value="Yeniden Ara">
+	</form>	
+  </div>
+</section>
+<section id="ucuslistele">
+</section>
+<footer>
+</footer>
+</body>
+</html>
