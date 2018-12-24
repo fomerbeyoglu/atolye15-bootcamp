@@ -1,0 +1,70 @@
+/* 
+ Feyz. OMERBEYOGLU
+ feyz@since90s.co
+ Atolye15 Bootcamp Project
+ v1.
+*/
+
+
+/* RESET.CSS */
+article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}a,hr{padding:0}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0}ins{text-decoration:none}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}a{text-decoration:none;color:#fff;}input,button {outline:0;border:0;}
+
+
+/* MAIN.CSS */
+@font-face {font-family:AvertaStd-Regular;src:url(fonts/AvertaStd-Regular.otf);}
+@font-face {font-family:AvertaStd-Semibold;src:url(fonts/AvertaStd-Semibold.otf);}
+body {background:#f7f8fc;color:#1a3163;font-family:AvertaStd-Regular;}
+.wrap {width:90%;max-width:960px;margin:0 auto;}
+.headbg {background-image: linear-gradient(102deg, #264380, #1a3163);padding-bottom:30px;box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.1);}
+header #ustmenu {background:none;box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.1);padding:20px 0}
+header .menulogo {background:#fff;-webkit-mask: url(icons/logo.svg) center / contain no-repeat;width:50px;height:50px;float:left;}
+header .menulogo:hover {background:#bbcee8;opacity:1;-webkit-animation:flash 1.5s;animation:flash 1.5s;}
+header .menulogo img {visibility:hidden;}
+header nav.menu {float:right;}
+header a:hover#menu-icon {background-color:#444;border-radius:4px 4px 0 0;}
+header nav.menu ul {display:flex;align-items:center;list-style:none;}
+header nav.menu li {padding:15px 20px;}
+header nav.menu li:last-child {padding-right:0;}
+header nav.menu li a {font-family:AvertaStd-Semibold;font-size:16px;display:block;}
+header nav.menu li a:hover {color:#bbcee8;text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+header nav.menu li a img:hover {opacity:.6;}
+#headalt {padding-top:40px;color:#fff;}
+#headalt nav.pagenav ul {display:flex;align-items:center;list-style:none;color:#d8e1eb;font-family:AvertaStd-Semibold;font-size:18px;}
+#headalt nav.pagenav li {display:inline-flex;color:#1a3163;margin:0 10px;border-radius:40px;line-height:35px;font-size:14px;}
+#headalt nav.pagenav li:first-child {background:rgba(255,255,255,.85);margin-left:0;}
+#headalt nav.pagenav li p {padding:2px 10px;}
+#headalt nav.pagenav li img {padding:7px;border-radius:40px;border:1px solid #b9c2cc;}
+#headalt nav.pagenav li:first-child img {background:#fff;border:none;}
+#headalt .ucusbilgi {font-family:AvertaStd-Semibold;float:left;text-align:left;font-size:42px;margin-top:15px;}
+#headalt .ucusbilgi p {font-size:14px;margin-top:20px;opacity:.7;}
+#headalt .ucusfiyat {font-size:14px;opacity:.5;}
+#headalt .ucusdetay {font-family:AvertaStd-Semibold;float:right;text-align:right;font-size:42px;}
+#headalt .ucusadevam {margin-top:15px;font-family:AvertaStd-Semibold;font-size:16px;color:#fff;background:#fab555 url(icons/rightwhite.svg) 90% 50% no-repeat;outline:0;border:none;border-radius:40px;padding:15px 80px 15px 25px;}
+#headalt .ucusadevam:hover {background:#e69833 url(icons/rightwhite.svg) 90% 50% no-repeat;;box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.3);cursor:pointer;}
+#ucusara {background:#fff;}
+#ucusara input {padding:25px 12px 25px 42px;font-family:AvertaStd-Semibold;font-size:14px;background:#fff;border-left:1px solid #ccc;outline:0;width:14%;}
+#ucusara input:first-child {border:0;padding-left:35px;}
+#ucusara input#nereden {background:url(icons/arakalkis.svg) 0% 50% no-repeat;}
+#ucusara input#nereye {background:url(icons/arainis.svg) 5% 50% no-repeat;}
+#ucusara input#tarih {background:url(icons/aratarih.svg) 5% 50% no-repeat;}
+#ucusara input#yolcu {background:url(icons/arayolcu.svg) 5% 50% no-repeat;}
+#ucusara .arabuton {width:180px;background:#97a6b8 url(icons/search.png) 90% 50% no-repeat;float:right;color:#fff;padding:15px 80px 15px 25px;;margin-top:10px;border-radius:50px;}
+#ucusara .arabuton:hover {background:#1a3163 url(icons/search.png) 90% 50% no-repeat;;box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.3);cursor:pointer;}
+#ucusara input#tarih:hover, #ucusara input#yolcu:hover {cursor:pointer;}
+header nav.menu li a, header nav.menu li a :hover, #headalt .ucusadevam, #headalt .ucusadevam:hover, #ucusara .arabuton, #ucusara .arabuton:hover {-webkit-transition:background .5s;transition:background .5s;}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
